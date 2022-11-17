@@ -1,14 +1,16 @@
 class Widget:
 
-    def __init__(self, name, x=None, y= None):
-
-        self.name = name    
-        self.x = 50
-        self.y = 50
+    def __init__(self, name):
+        self.name = name
+        self._x = 50
+        self._y = 50
 
     def size(self):
-        return (self.x,self.y)
+        return (self._x,self._y)
 
     def resize(self, x, y):
-        self.x = x
-        self.y = y
+        self._x = x
+        self._y = y
+    
+    def dispose(self):
+        pass

@@ -14,6 +14,8 @@ Source: https://docs.python.org/3/library/unittest.html
 ## test suite
 
 - A test suite is a **collection of test cases, test suites, or both**. It is used to **aggregate tests** that should be executed together.
+- Test suites are automatically managed when unittest is called. However, it is also possible to use `unittest.TestSuite()` class, manually add the cases and call the runner to do so. It is a bit advanced though.
+- It is encouraged to keep the all the tests in the same module of the code they are to test.
 
 ## test runner
 
